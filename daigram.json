@@ -1,0 +1,15 @@
+{
+  "components": [
+    { "type": "arduino", "board": "megaatmega1280", "position": [100, 100] },
+    { "type": "sim800l", "position": [300, 150] },  // Assuming a SIM800L GSM module
+    { "type": "tinygps", "position": [300, 250] },  // Assuming a TinyGPS module
+    { "type": "button", "position": [50, 200] },
+  ],
+  "connections": [
+    { "from": "arduino/15", "to": "sim800l/tx" },
+    { "from": "arduino/14", "to": "sim800l/rx" },
+    { "from": "arduino/16", "to": "tinygps/tx" },
+    { "from": "arduino/17", "to": "tinygps/rx" },
+    { "from": "button/pin", "to": "arduino/2" }
+  ]
+}

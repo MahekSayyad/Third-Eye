@@ -1,0 +1,8 @@
+board = "megaatmega1280"  # Adjust if using a different board
+sketch = "sketch.ino"      # Assuming your sketch file is named "main.cpp"
+libraries = [
+    "TinyGSM",
+    "GSM_Generic",
+    "SoftwareSerial",
+    "TinyGPSPlus",
+]
